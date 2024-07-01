@@ -1,0 +1,115 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'kotlin-android'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+
+localProperties.load(new FileInputStream("/Users/kshitibhatia/Documents/Projects/smartbike_flutter/android/local.properties"))
+
+repositories {
+    maven {
+        url 'https://pkgs.dev.azure.com/tagbox/Production/_packaging/sdks/maven/v1'
+        credentials {
+            username "sdks"
+            password System.getenv("SYSTEM_ACCESSTOKEN") != null ? System.getenv("SYSTEM_ACCESSTOKEN") : "${localProperties.getProperty("tagboxSdkToken")}"
+        }
+    }
+}
+
+
+android {
+    compileSdkVersion 33
+    ndkVersion flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+        exclude 'resources.arsc'
+        exclude 'accelerate_decelerate_interpolator.xml'
+    }
+
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId "com.tagbox.smartbike_flutter"
+//        configurations.all {
+//            resolutionStrategy { force 'androidx.core:core:1.6.0' }
+//        }
+        // You can update the following values to match your application needs.
+        // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
+        minSdkVersion 23
+        targetSdkVersion 33
+        versionCode 15
+        versionName "1.6.3"
+        multiDexEnabled true
+        ndk {
+            abiFilters "arm64-v8a", "armeabi-v7a", "x86", "x86_64"
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'app_release'
+            keyPassword 'tagbox_123'
+            storeFile file('/Users/kshitibhatia/Documents/Projects/smartbike_flutter/SBMConnect.jks')
+            storePassword 'tagbox_123'
+        }
+    }
+
+        
+    buildTypes {
+        release {
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig signingConfigs.release
+            ndk {
+                debugSymbolLevel 'SYMBOL_TABLE'
+                abiFilters "arm64-v8a", "armeabi-v7a", "x86", "x86_64"
+            }
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.android.support:multidex:2.0.1'
+    implementation 'com.google.guava:guava:27.0.1-android'
+    // Import the BoM for the Firebase platform
+    implementation(platform("com.google.firebase:firebase-bom:31.1.1"))
+
+    // Add the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation("com.google.firebase:firebase-crashlytics")
+    implementation("com.google.firebase:firebase-analytics")
+}

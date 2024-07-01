@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>CADisableMinimumFrameDurationOnPhone</key>
+		<true/>
+		<key>CFBundleDevelopmentRegion</key>
+		<string>$(DEVELOPMENT_LANGUAGE)</string>
+		<key>CFBundleDisplayName</key>
+		<string>SBMConnect</string>
+		<key>CFBundleExecutable</key>
+		<string>$(EXECUTABLE_NAME)</string>
+		<key>CFBundleIdentifier</key>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+		<key>CFBundleInfoDictionaryVersion</key>
+		<string>6.0</string>
+		<key>CFBundleName</key>
+		<string>SBMConnect</string>
+		<key>CFBundlePackageType</key>
+		<string>APPL</string>
+		<key>CFBundleShortVersionString</key>
+		<string>$(MARKETING_VERSION)</string>
+		<key>CFBundleSignature</key>
+		<string>????</string>
+		<key>CFBundleVersion</key>
+		<string>$(CURRENT_PROJECT_VERSION)</string>
+		<key>LSRequiresIPhoneOS</key>
+		<true/>
+		<key>NSAppleMusicUsageDescription</key>
+		<string>Needs to access such permission which is required in application for increasing user experience</string>
+		<key>NSBluetoothAlwaysUsageDescription</key>
+		<string>App uses Bluetooth to connect to the BLE sensor device.</string>
+		<key>NSBluetoothPeripheralUsageDescription</key>
+		<string>The app uses bluetooth module as a peripheral to connect to BLE sensors</string>
+        <key>NSCameraUsageDescription</key>
+        <string>Camera is used for scanning QR code imprinted on SBM device</string>
+		<key>NSBonjourServices</key>
+		<array>
+			<string>_dartobservatory._tcp</string>
+		</array>
+		<key>NSLocationWhenInUseUsageDescription</key>
+		<string>Location is needed to be able to connect the near by sensor</string>
+		<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+		<string>Location is needed to be able to connect the near by sensor</string>
+		<key>NSMotionUsageDeBACKGROUNDescription</key>
+		<string>Needs to access such permission which is required in application to capture sensor data</string>
+		<key>NSMotionUsageDescription</key>
+		<string>Needs to access such permission which is required in application to capture sensor data</string>
+		<key>UIBackgroundModes</key>
+		<array>
+			<string>bluetooth-central</string>
+			<string>fetch</string>
+			<string>location</string>
+			<string>remote-notification</string>
+		</array>
+		<key>UILaunchStoryboardName</key>
+		<string>LaunchScreen</string>
+		<key>UIMainStoryboardFile</key>
+		<string>Main</string>
+		<key>UISupportedInterfaceOrientations</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+		</array>
+		<key>UISupportedInterfaceOrientations~ipad</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+			<string>UIInterfaceOrientationPortraitUpsideDown</string>
+			<string>UIInterfaceOrientationLandscapeLeft</string>
+			<string>UIInterfaceOrientationLandscapeRight</string>
+		</array>
+		<key>UIViewControllerBasedStatusBarAppearance</key>
+		<false/>
+		<key>UIStatusBarHidden</key>
+		<false/>
+		 <key>SERVER_CLIENT_ID</key>
+         <string>650591625785-lrhj8cmh2ffos6v28422cubpe7l78qsi.apps.googleusercontent.com</string>
+        <!-- Google Sign-in Section -->
+        <key>CFBundleURLTypes</key>
+        <array>
+        	<dict>
+        		<key>CFBundleTypeRole</key>
+        		<string>Editor</string>
+        		<key>CFBundleURLSchemes</key>
+        		<array>
+        			<string>com.googleusercontent.apps.650591625785-lrhj8cmh2ffos6v28422cubpe7l78qsi</string>
+        		</array>
+        	</dict>
+        </array>
+        <!-- End of the Google Sign-in Section -->
+	</dict>
+</plist>

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "smartbike_ios_package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://shubhamaryan_bansal@bitbucket.org/tagboxandroid/smartbike_ios_package.git",
+      "state" : {
+        "revision" : "f8d58ee1c521dff094b90ee8d35279d2c53de1be",
+        "version" : "0.0.6"
+      }
+    }
+  ],
+  "version" : 2
+}

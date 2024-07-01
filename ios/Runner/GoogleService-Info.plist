@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>650591625785-lrhj8cmh2ffos6v28422cubpe7l78qsi.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.650591625785-lrhj8cmh2ffos6v28422cubpe7l78qsi</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>650591625785-6afhnntefsphna5sspk44mvpqtiihfj5.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDgp6OFp3UfGqEfa4hLBo7d41ny48J3m7w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>650591625785</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.tagbox.smartbikeFlutter</string>
+	<key>PROJECT_ID</key>
+	<string>sbmconnect-44ac8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sbmconnect-44ac8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:650591625785:ios:4e43d06560e06a3ad4e3e8</string>
+</dict>
+</plist>

@@ -1,0 +1,78 @@
+{
+  "project_info": {
+    "project_number": "650591625785",
+    "project_id": "sbmconnect-44ac8",
+    "storage_bucket": "sbmconnect-44ac8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650591625785:android:a99ab422bd754e07d4e3e8",
+        "android_client_info": {
+          "package_name": "com.tagbox.smartbike_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650591625785-6afhnntefsphna5sspk44mvpqtiihfj5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tagbox.smartbike_flutter",
+            "certificate_hash": "31efe236baa21f91f978effd25745795be0f368e"
+          }
+        },
+        {
+          "client_id": "650591625785-8cn1h0loaup76urodicje7jkrftfas4b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tagbox.smartbike_flutter",
+            "certificate_hash": "5b793aa50094b53586259e7bf8d2ce3c335cf5bf"
+          }
+        },
+        {
+          "client_id": "650591625785-uifgi41gjjiq58j0npsesi7p0gfgkfvc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tagbox.smartbike_flutter",
+            "certificate_hash": "15612d0068d61013332bc16fe467c0e60e3692c7"
+          }
+        },
+        {
+          "client_id": "650591625785-uslud7uuib98g4bn00c10k76hrcr6915.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tagbox.smartbike_flutter",
+            "certificate_hash": "76ee8daec38510210a2dc1e98caba3c71e84be16"
+          }
+        },
+        {
+          "client_id": "650591625785-amtf62b9lvbgut0mi2u7g42l7cvckruj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBguppMQhlWXtXx7aU6EbcbqoyftmneXss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650591625785-13m5lpr84rauk5juov9ejtihhnj3eqjj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "650591625785-lrhj8cmh2ffos6v28422cubpe7l78qsi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tagbox.smartbikeFlutter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
